@@ -39,7 +39,7 @@ public class MyService extends IntentService
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(MyService.this)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentTitle(intent.getExtras().getString("title"))
-                .setContentText("Take questionnaire for Duke Mood Study.")
+                .setContentText(intent.getExtras().getString("content"))
                 .setVibrate(pattern)
                 .setAutoCancel(true);
 
